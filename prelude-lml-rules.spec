@@ -13,6 +13,7 @@ URL:		https://www.prelude-siem.org/
 BuildRequires:	rpm-perlprov
 BuildRequires:	sed >= 4.0
 Requires:	prelude-lml >= %{version}
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
