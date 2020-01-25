@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	Ruleset for Prelude LML pcre plugin
 Summary(pl.UTF-8):	Zestaw reguł dla wtyczki pcre Prelude LML
 Name:		prelude-lml-rules
