@@ -1,13 +1,13 @@
 Summary:	Ruleset for Prelude LML pcre plugin
 Summary(pl.UTF-8):	Zestaw reguł dla wtyczki pcre Prelude LML
 Name:		prelude-lml-rules
-Version:	5.1.0
+Version:	5.2.0
 Release:	1
 License:	GPL v2+
 Group:		Applications/Networking
 #Source0Download: https://www.prelude-siem.org/projects/prelude/files
-Source0:	https://www.prelude-siem.org/attachments/download/1174/%{name}-%{version}.tar.gz
-# Source0-md5:	3c686aafd05630e2f51eef5a3313a981
+Source0:	https://www.prelude-siem.org/attachments/download/1396/%{name}-%{version}.tar.gz
+# Source0-md5:	96cf32011ec2d290942f58f0d6bc89d4
 URL:		https://www.prelude-siem.org/
 BuildRequires:	rpm-perlprov
 BuildRequires:	rpmbuild(macros) >= 1.745
@@ -34,7 +34,7 @@ Społeczność Prelude.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_sysconfdir}/prelude-lml,%{_bindir}}
 
-cp -r ruleset $RPM_BUILD_ROOT%{_sysconfdir}/prelude-lml
+cp -pr ruleset $RPM_BUILD_ROOT%{_sysconfdir}/prelude-lml
 cp -p src/prelude-lml-rules-check $RPM_BUILD_ROOT%{_bindir}
 
 %clean
